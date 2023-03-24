@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>AppDeGatos</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body background="https://w7.pngwing.com/pngs/168/213/png-transparent-cat-cat-kitten-carnivora-cat-background-border-white-mammal.png">
+    <h2 style="color: blue; face:calibri;">AppDeGatos</h2>
+    <main>
+      <h3 style="color: rgb(34, 255, 0); face:arial;">Imágenes de Gatos:</h3>
+      <!-- TODO: Agregar enlace a imágenes de gatos -->
+      <h3 style="color: rgb(255, 0, 234); face:fantasy;"> Haz click aquí para ver más <a href="#" target="_blank" rel="noopener noreferrer">imágenes de gatos.</a></h3>
+
+      <a href="#" target="_blank" rel="noopener noreferrer"><img src="https://bit.ly/fcc-relaxing-cat" alt="Un lindo gato naranja recostado sobre su espalda."></a>
+
+      <hr>
+
+      <h3  style="color: rgb(0, 149, 255); face:serif;">Listas de Gatos</h3>
+
+      <div>
+        <h3 style="color: rgb(88, 97, 103); face:monospace;">Cosas que los gatos <em>aman</em>:</h3>
+        <ul>
+          <li>Menta gatuna</li>
+          <li>Apuntadores Láser</li>
+          <li><s>Lasaña</s></li>
+        </ul>
+        <img src="https://cdn0.recetasgratis.net/es/posts/9/2/8/lasana_57829_600.jpg" alt="Lasaña" width="300">
+
+        <h3 style="color: rgb(183, 28, 28); face:sans-serif;">Cosas que los gatos <strong>odian</strong>:</h3>
+        <ol>
+          <li>Tratamientos antipulgas</li>
+          <li>Truenos</li>
+          <li>Otros gatos</li>
+        </ol>
+      </div>
+      <img src="imagenes/gatos.jpg" alt="Gatos" width="300">
+
+      <form action="./respuesta.txt">
+        <!-- Botones de Radio -->
+        <label for="interior">
+          <input id="interior" type="radio" value="interior" name="interior-exterior" checked>Interior
+        </label>
+        <br>
+        <label for="exterior">
+          <input id="exterior" type="radio" value="exterior" name="interior-exterior">Exterior
+        </label>
+        <br>
+     
+        <!-- Casillas de Verificación -->
+        <label for="carinoso">
+          <input id="carinoso" type="checkbox" value="carinoso" name="personalidad" checked>Cariñoso
+        </label>
+        <br>
+        <label for="perezoso">
+          <input id="perezoso" type="checkbox" value="perezoso" name="personalidad">Perezoso
+        </label>
+        <br>
+        <label for="energico">
+          <input id="energico" type="checkbox" value="energico" name="personalidad">Enérgico
+        </label>
+        <br>
+
+        <!-- Texto y Botón Enviar -->
+        <h3 style="color: rgb(13, 81, 5); face:fantasy;">Ingrese Nombre</h3>
+        <input type="text" placeholder="Nombre de tu gato" required><br>
+        <h3  style="color: rgb(8, 78, 29); face:fantasy;">Ingrese Edad</h3>
+        <input type="text" placeholder="Edad  de tu gato" required><br>
+        <h3  style="color: rgb(9, 81, 20); face:fantasy;">Ingrese URL</h3>
+        <input type="text" placeholder="URL de la foto de tu gato" required><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+      </form>
+    </main>
+
+    <footer>
+      <p><small>Sin Derechos de Autor - <a href="https://www.freecodecamp.org/espanol/">freeCodeCamp.org</a></small></p>
+    </footer>
+  </body>
+</html>
